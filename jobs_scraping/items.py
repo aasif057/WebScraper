@@ -8,7 +8,7 @@ import scrapy
 
 class JobsScrapingItem(scrapy.Item):
     # define the fields for your item here like:
-    jobId = scrapy.Field()
+    #jobId = scrapy.Field()
     title = scrapy.Field()
     company_name = scrapy.Field()
     salary = scrapy.Field()

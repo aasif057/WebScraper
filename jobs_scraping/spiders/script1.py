@@ -42,7 +42,7 @@ class Spider1(scrapy.Spider):
             title = i['title']
             items['title'] = title
             company_name = i['companyName']
-            jobId = i['jobId']
+            #jobId = i['jobId']
             skills = i['tagsAndSkills']
             #description = i['jobDescription']
             #description = lxml.html.fromstring(description).text_content()
@@ -54,7 +54,7 @@ class Spider1(scrapy.Spider):
             url = "https://www.naukri.com" + i['jdURL']
             #print(url)
             # items
-            items['jobId'] = jobId
+            #items['jobId'] = jobId
             items['title'] = title
             items['company_name'] = company_name
             items['salary'] = salary
